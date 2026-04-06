@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    nitro: {
+    preset: 'cloudflare-pages'   // ← add this
+  },
   ssr: true,
   devtools: { enabled: true },
   buildDir: process.env.NODE_ENV === 'production' ? '.nuxt-build' : '.nuxt',
