@@ -1,24 +1,22 @@
 {
-  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "strict": false,
     "skipLibCheck": true,
-    "types": [
-      "vite/client"
-    ],
-    "paths": {}
+    "skipDefaultLibCheck": true,
+    "allowJs": true,
+    "noEmit": true
   },
   "include": [
     "**/*.ts",
-    "**/*.vue",
-    "**/*.d.ts"
+    "**/*.vue"
   ],
   "exclude": [
     "node_modules",
     ".nuxt",
+    ".nuxt-build",
     ".output",
     "dist"
   ]
