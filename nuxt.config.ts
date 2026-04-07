@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   ssr: true,
 
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   runtimeConfig: {
     public: {
@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       login: '/login',
       callback: '/confirm',
       exclude: ['/register', '/login'],
-    }
+    },
   },
 
   tailwindcss: {
